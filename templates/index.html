@@ -1,0 +1,24 @@
+{%extends "base.html"%}
+
+{%block content%}
+
+<center>
+
+<h1 class="font-weight-bold" style="color: aliceblue; font-size: 150px; margin-bottom: 0px; padding-bottom: 0px;" >Vision Voice</h1>
+<h1 class="font-weight-lighter" style="color: aliceblue; font-size: 30px; text-align: right; margin-right: 260px; margin-top: 0px; padding-top: 0px;">IMAGE CAPTIONING WITH DICTATION</h4>
+
+<br>
+<br>
+<br>
+<br>
+<br> 
+<form action="{{url_for('after')}}" method='POST' enctype='multipart/form-data'>
+    <input type="file" name='file1' id="file1" class="inputfile">
+    <label for="file1">Choose a file</label>
+    
+    <br>
+    <input type="submit" name="btn" value='Predict Caption' class='bstyle'> 
+</form>
+</center>
+
+{%endblock%}
